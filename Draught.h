@@ -10,4 +10,6 @@
 
 @interface Draught : UIView
 
+-(instancetype)initWithFrame:(CGRect)frame withColor:(UIColor*)color;
+
 @end

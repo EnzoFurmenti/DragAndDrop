@@ -10,12 +10,15 @@
 
 @implementation Draught
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(instancetype)initWithFrame:(CGRect)frame withColor:(UIColor*)color{
+    self = [super initWithFrame:frame];
+    if(self)
+    {
+        self.layer.cornerRadius = CGRectGetWidth(frame) / 2;
+        self.backgroundColor = color;
+    }
+    return self;
 }
-*/
+
 
 @end
